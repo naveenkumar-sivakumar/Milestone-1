@@ -1,0 +1,112 @@
+.nav_style:hover{
+    box-shadow: 0px 0px 10px 5px blue;
+}
+.text_underline:hover{
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color:blue ;
+    text-decoration-style:solid ;
+      
+    transition: 5s; 
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-image: linear-gradient(red, yellow);
+    border: none;
+}
+body{
+    background-image: url('https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/602f1fdb8ffcceea95a9f1f1_601054f89af0fc2d3570555d_chiara-luzzana.jpeg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+.home_text{
+        padding-left: 150px;
+        padding-top: 150px;
+    }
+    .font_style{
+        font-family: 'Qwigley', cursive;
+        color: rgb(14, 14, 153);
+    }
+    .button_style{
+        padding: 10px 10px 10px 10px;
+        border-radius: 50px;
+        background-color: rgb(9, 9, 218);
+        text-align: center;
+        border: none;
+    
+    }
+    .button_style:hover{
+        box-shadow: 0px 0px 10px 5px blue;
+    }
+    .profile_image{
+        background-image:("image.jpeg");
+        height: 100px;
+        width: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .about_text{
+        font-family: 'Qwigley', cursive;
+    }
+    .icon1{
+        color: rgb(47, 47, 94);
+        font-size: 30px;
+    }
+    .d-block{
+        height: 100px;
+        width: 50px;
+    }
+    .log{
+        font-size: 50px;
+        transition: 2s;
+        display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
+    }
+    
+    @keyframes bounce {
+        0% { top: 0; }
+        50% { top: -0.2em; }
+        70% { top: -0.3em; }
+        100% { top: 0; }
+    }
+    :hover.image1{
+        transform: rotateX(360deg);
+        transition: 3px;
+    }
+    .back1{
+        background-color: transparent;
+    }
+    .text1,.text2{
+        font-size: 50px;
+        color:blueviolet ;
+        font-family: 'Qwigley', cursive;
+    }
+    
+    
+    .About_us::before {  
+        transform: scaleX(0);
+        transform-origin: bottom right;
+      }
+      
+      .About_us:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+      
+      .About_us::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        inset: 0 0 0 0;
+        background: red;
+        z-index: -1;
+        transition: transform .3s ease;
+      }
